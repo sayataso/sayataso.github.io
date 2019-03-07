@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+.introduce .title {
+    width: 280px;
+}
+
+.recipe {
+    margin: auto;
+}
+
+.sentense  a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sentense  a:hover {
+    text-decoration: underline;
+}
+
+.sentense  a::before {
+    content:"";
+	display:inline-block;
+    width: 20px;
+    height: 14px;
+	background:url(../images/downroad.png) no-repeat;
+	background-size:contain;
+}
+
+@media screen and (min-width: 768px) and (max-width:768px) {
+    
+    .introduce .title {
+        width: 268px;
+    }
+    
+    .sentense {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .introduce .title {
+        width: 254px;
+    }
+
+    .intro_cont {
+        margin-top: 0px;
+        padding-bottom: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .recipe {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .recipe img {
+        width: 100%;
+    }
+}
